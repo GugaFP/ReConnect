@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresas | ReConnect</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+  <img src="img/LogoReconnect.png" alt="ReConnect Logo">
+
+</a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="impacto.html">Impacto</a></li>
+      <li><a href="empresas.html">Empresas</a></li>
+      <li><a href="ongs.html">ONGs</a></li>
+      <li><a class="nav-cart" href="cart.html">Carrinho <span id="cartCount">0</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="page">
+  <span class="eyebrow dark">Portal Corporativo</span>
+  <h1>Cadastre produtos no marketplace</h1>
+  <p class="subtitle">Ao cadastrar um produto aqui, ele aparece automaticamente no catálogo do marketplace usando armazenamento local do navegador.</p>
+
+  <form class="modern-form" id="companyForm">
+    <div class="form-grid">
+      <div><label>Nome da empresa</label><input type="text" id="companyName" placeholder="Acme Corp" required></div>
+      <div><label>CNPJ</label><input type="text" id="companyCnpj" placeholder="00.000.000/0000-00"></div>
+      <div><label>E-mail corporativo</label><input type="email" id="companyEmail" placeholder="contato@empresa.com"></div>
+      <div><label>Telefone</label><input type="text" id="companyPhone" placeholder="(11) 99999-9999"></div>
+      <div><label>Nome do produto</label><input type="text" id="newProductName" placeholder="Ex: Camiseta Eco Premium" required></div>
+      <div><label>Categoria</label>
+        <select id="newProductCategory" required>
+          <option value="roupas">Roupas</option>
+          <option value="acessorios">Acessórios</option>
+          <option value="calcados">Calçados</option>
+        </select>
+      </div>
+      <div><label>Preço promocional</label><input type="number" id="newProductPrice" placeholder="79.90" step="0.01" required></div>
+      <div><label>Preço original</label><input type="number" id="newProductOldPrice" placeholder="159.90" step="0.01" required></div>
+      <div><label>Quantidade disponível</label><input type="number" id="newProductQuantity" placeholder="10"></div>
+      <div><label>URL da imagem</label><input type="url" id="newProductImage" placeholder="https://..."></div>
+    </div>
+    <button type="submit">Cadastrar Produto</button>
+  </form>
+
+  <div class="info-strip">
+    <div><strong>ESG</strong><span>Redução de descarte</span></div>
+    <div><strong>Visibilidade</strong><span>Produtos no marketplace</span></div>
+    <div><strong>Impacto</strong><span>Apoio a organizações sociais</span></div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3>ReConnect</h3>
+      <p>A plataforma profissional de economia circular conectando estoques parados a novos propósitos.</p>
+    </div>
+
+    <div>
+      <h3>Plataforma</h3>
+      <a href="marketplace.html">Explorar Produtos</a>
+      <a href="impacto.html">Nosso Impacto</a>
+      <a href="cart.html">Carrinho</a>
+    </div>
+
+    <div>
+      <h3>Parceiros</h3>
+      <a href="empresas.html">Para Empresas</a>
+      <a href="ongs.html">Para ONGs</a>
+    </div>
+
+    <div>
+      <h3>Contato</h3>
+      <p>suporte@reconnect.com</p>
+      <p>0800 123 4567</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

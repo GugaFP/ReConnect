@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace | ReConnect</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+  <img src="img/LogoReconnect.png" alt="ReConnect Logo">
+
+</a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="impacto.html">Impacto</a></li>
+      <li><a href="empresas.html">Empresas</a></li>
+      <li><a href="ongs.html">ONGs</a></li>
+      <li><a class="nav-cart" href="cart.html">Carrinho <span id="cartCount">0</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="shop-hero">
+  <div class="shop-hero-text reveal">
+    <span class="eyebrow">Marketplace ReConnect</span>
+    <h1>Peças selecionadas com propósito circular.</h1>
+    <p>Explore roupas e acessórios com desconto, origem consciente e impacto positivo.</p>
+  </div>
+
+  <div class="shop-highlight-card reveal">
+    <h3>Oferta Circular</h3>
+    <p>Até 60% OFF em produtos de estoque reaproveitado.</p>
+    <a href="#catalogo">Ver catálogo</a>
+  </div>
+</section>
+
+<section class="shop-controls reveal">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Buscar produto..." oninput="renderProducts()">
+  </div>
+
+  <select id="categoryFilter" onchange="renderProducts()">
+    <option value="todos">Todas as categorias</option>
+    <option value="roupas">Roupas</option>
+    <option value="acessorios">Acessórios</option>
+    <option value="calcados">Calçados</option>
+  </select>
+
+  <select id="sortFilter" onchange="renderProducts()">
+    <option value="padrao">Ordenar</option>
+    <option value="menor">Menor preço</option>
+    <option value="maior">Maior preço</option>
+    <option value="desconto">Maior desconto</option>
+  </select>
+</section>
+
+<section class="catalog-section" id="catalogo">
+  <div class="section-heading reveal">
+    <h2>Catálogo Oficial</h2>
+    <p>Produtos adicionados por empresas parceiras também aparecem aqui automaticamente.</p>
+  </div>
+
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3>ReConnect</h3>
+      <p>A plataforma profissional de economia circular conectando estoques parados a novos propósitos.</p>
+    </div>
+
+    <div>
+      <h3>Plataforma</h3>
+      <a href="marketplace.html">Explorar Produtos</a>
+      <a href="impacto.html">Nosso Impacto</a>
+      <a href="cart.html">Carrinho</a>
+    </div>
+
+    <div>
+      <h3>Parceiros</h3>
+      <a href="empresas.html">Para Empresas</a>
+      <a href="ongs.html">Para ONGs</a>
+    </div>
+
+    <div>
+      <h3>Contato</h3>
+      <p>suporte@reconnect.com</p>
+      <p>0800 123 4567</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

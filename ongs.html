@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONGs | ReConnect</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+  <img src="img/LogoReconnect.png" alt="ReConnect Logo">
+
+</a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="impacto.html">Impacto</a></li>
+      <li><a href="empresas.html">Empresas</a></li>
+      <li><a href="ongs.html">ONGs</a></li>
+      <li><a class="nav-cart" href="cart.html">Carrinho <span id="cartCount">0</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="page">
+  <span class="eyebrow dark">Rede de impacto</span>
+  <h1>Acesso Institucional para ONGs</h1>
+  <p class="subtitle">Cadastre sua organização para receber lotes de doação estruturados provenientes de empresas parceiras.</p>
+
+  <form class="modern-form" id="ongForm">
+    <div class="form-grid">
+      <div><label>Nome da ONG</label><input type="text" placeholder="Instituto Transformar" required></div>
+      <div><label>CNPJ</label><input type="text" placeholder="00.000.000/0000-00"></div>
+      <div><label>Área de atuação</label><input type="text" placeholder="Educação, Assistência Social..."></div>
+      <div><label>Cidade e Estado</label><input type="text" placeholder="São Paulo - SP"></div>
+      <div><label>E-mail</label><input type="email" placeholder="contato@ong.org"></div>
+      <div><label>Telefone</label><input type="text" placeholder="(11) 99999-9999"></div>
+    </div>
+    <label class="full-label">Tipos de produtos que aceita</label>
+    <textarea placeholder="Roupas de inverno, calçados, material escolar..."></textarea>
+    <button type="submit">Enviar Cadastro</button>
+  </form>
+
+  <div class="big-card">
+    <h2>Como as ONGs participam?</h2>
+    <p>As organizações cadastradas podem ser conectadas a lotes de produtos para doação, campanhas solidárias e ações de reaproveitamento com empresas parceiras.</p>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3>ReConnect</h3>
+      <p>A plataforma profissional de economia circular conectando estoques parados a novos propósitos.</p>
+    </div>
+
+    <div>
+      <h3>Plataforma</h3>
+      <a href="marketplace.html">Explorar Produtos</a>
+      <a href="impacto.html">Nosso Impacto</a>
+      <a href="cart.html">Carrinho</a>
+    </div>
+
+    <div>
+      <h3>Parceiros</h3>
+      <a href="empresas.html">Para Empresas</a>
+      <a href="ongs.html">Para ONGs</a>
+    </div>
+
+    <div>
+      <h3>Contato</h3>
+      <p>suporte@reconnect.com</p>
+      <p>0800 123 4567</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
